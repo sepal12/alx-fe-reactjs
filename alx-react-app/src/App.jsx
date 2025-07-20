@@ -1,3 +1,16 @@
+import WelcomeMessage from './components/WelcomeMessage';
+
+// ...existing code...
+
+function App() {
+    return (
+        <div>
+            <WelcomeMessage />
+            {/* ...other components or content... */}
+        </div>
+    );
+}
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
