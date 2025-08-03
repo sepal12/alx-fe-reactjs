@@ -34,5 +34,6 @@ import { useRecipeStore } from '../recipeStore';
     </div>
   );
 };
-
+import { Link } from 'react-router-dom';
+import { useRecipeStore } from './recipeStore';
 export default RecipeList;
