@@ -1,4 +1,6 @@
 import axios from 'axios';
+
+export const fetchUserData = async (username) => 
   {
     const response = await axios.get(`https://api.github.com/users/${username}`, {
       headers: {
@@ -174,7 +176,7 @@ import axios from 'axios';
     return response.data;
   };
   
- {
+  export const fetchUsers = async ({ username, location, minRepos, page = 1 }) => {
     let query = '';
     if (username) query += `${username} in:login`;
     if (location) query += ` location:${location}`;
