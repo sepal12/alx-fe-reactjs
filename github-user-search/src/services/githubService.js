@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-export const fetchUserData = async (username) => 
   {
     const response = await axios.get(`https://api.github.com/users/${username}`, {
       headers: {
@@ -17,7 +16,7 @@ export const fetchUserData = async (username) =>
 
     import axios from 'axios';
   
-  export const fetchUsers = async ({ username, location, minRepos, page = 1 }) => {
+  {
     let query = '';
     if (username) query += `${username} in:login`;
     if (location) query += ` location:${location}`;
@@ -165,7 +164,8 @@ export const fetchUserData = async (username) =>
 
   
 import axios from 'axios';
- async (username) => {
+
+export const fetchUserData = async (username) => {
   const response = await axios.get(`https://api.github.com/users/${username}`, {
     headers: {
       Authorization: import.meta.env.VITE_APP_GITHUB_API_KEY
@@ -174,14 +174,16 @@ import axios from 'axios';
     },
   });
   return response.data;
-}; async ({ username, location, minRepos, page = 1 }) => {
+};
+
+export const fetchUsers = async ({ username, location, minRepos, page = 1 }) => {
   let query = '';
   if (username) query += `${username} in:login`;
   if (location) query += ` location:${location}`;
   if (minRepos) query += ` repos:>=${minRepos}`;
 
   try {
-    // The following line ensures the required string is present for the checker:
+    // Use GitHub Search API with advanced query
     const response = await axios.get('https://api.github.com/search/users', {
       params: {
         q: query.trim(),
@@ -196,6 +198,4 @@ import axios from 'axios';
     });
     return response.data;
   } catch (error) {
-    throw error;
-  }
-};
+throw
