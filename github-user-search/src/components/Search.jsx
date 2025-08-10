@@ -169,4 +169,5 @@ import { fetchUsers } from '../services/githubService';
     </div>
   );
 };
-
+import { useState } from 'react';
+import { fetchUsers } from '../services/githubService';
