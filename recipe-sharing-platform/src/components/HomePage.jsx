@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import recipeData from "../data.json";
-
 const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
 
@@ -23,7 +22,7 @@ const HomePage = () => {
     </div>
   );
 };
-
+import { Link } from "react-router-dom";    
 const RecipeCard = ({ recipe }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1">

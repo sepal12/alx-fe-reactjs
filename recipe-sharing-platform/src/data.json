@@ -3,24 +3,51 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://images.unsplash.com/photo-1611270733439-b037a9f3f1a9?w=600"
+    "image": "https://images.unsplash.com/photo-1611270733439-b037a9f3f1a9?w=600",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or guanciale",
+      "4 large eggs",
+      "50g pecorino cheese",
+      "50g parmesan",
+      "Freshly ground black pepper",
+      "Salt"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil and cook spaghetti according to package instructions.",
+      "While pasta cooks, fry pancetta in a large pan until crispy.",
+      "In a bowl, whisk eggs and grated cheeses together with plenty of black pepper.",
+      "Drain pasta, reserving some cooking water, and immediately add to the pancetta.",
+      "Remove from heat and quickly stir in the egg mixture, creating a creamy sauce.",
+      "Add pasta water as needed to loosen the sauce.",
+      "Serve immediately with extra cheese and pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600"
-  },
-  {
-    "id": 3,
-    "title": "Vegetable Stir Fry",
-    "summary": "Quick and healthy mix of fresh vegetables with a savory sauce.",
-    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600"
-  },
-  {
-    "id": 4,
-    "title": "Chocolate Chip Cookies",
-    "summary": "Classic cookies with melty chocolate chips and crisp edges.",
-    "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600"
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
+    "ingredients": [
+      "500g chicken breast",
+      "150g yogurt",
+      "2 tbsp tikka masala paste",
+      "1 onion",
+      "2 garlic cloves",
+      "400g canned tomatoes",
+      "100ml cream",
+      "Fresh coriander",
+      "Rice to serve"
+    ],
+    "instructions": [
+      "Cut chicken into chunks and marinate in yogurt and 1 tbsp masala paste for at least 1 hour.",
+      "Grill or pan-fry chicken until lightly charred.",
+      "In a separate pan, fry chopped onion and garlic until soft.",
+      "Add remaining paste and cook for 1 minute.",
+      "Add tomatoes and simmer for 10 minutes.",
+      "Blend sauce until smooth, return to pan.",
+      "Add chicken and cream, simmer for 5 minutes.",
+      "Garnish with coriander and serve with rice."
+    ]
   }
 ]
