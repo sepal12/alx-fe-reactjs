@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import recipeData from "../data.json";
 const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    // In a real app, you would fetch from an API here
     setRecipes(recipeData);
   }, []);
 
@@ -13,7 +13,15 @@ const HomePage = () => {
       <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
         Delicious Recipes
       </h1>
-
+      <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        Delicious Recipes
+      </h1>
+      <Link
+        to="/add-recipe"
+        className="block mx-auto mb-8 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-center max-w-xs"
+      >
+        + Add New Recipe
+      </Link>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {recipes.map((recipe) => (
           <RecipeCard key={recipe.id} recipe={recipe} />
@@ -44,4 +52,6 @@ const RecipeCard = ({ recipe }) => {
   );
 };
 
+
 export default HomePage;
+
